@@ -6,5 +6,4 @@ RSpec.describe 'users/new', type: :view do
                     name: 'MyString'
                   ))
   end
-
 end
