@@ -1,17 +1,3 @@
-<<<<<<< HEAD
-ENV['RAILS_ENV'] ||= 'test'
-require_relative '../config/environment'
-require 'rails/rails_helper'
-
-class ActiveSupport::TestCase
-  # Run tests in parallel with specified workers
-  parallelize(workers: :number_of_processors, with: :threads)
-
-  # Setup all fixtures in test/fixtures/*.yml for all tests in alphabetical order.
-  fixtures :all
-
-  # Add more helper methods to be used by all tests here...
-=======
 # This file is copied to spec/ when you run 'rails generate rspec:install'
 require 'spec_helper'
 ENV['RAILS_ENV'] ||= 'test'
@@ -75,5 +61,4 @@ RSpec.configure do |config|
   config.filter_rails_from_backtrace!
   # arbitrary gems may also be filtered via:
   # config.filter_gems_from_backtrace("gem name")
->>>>>>> 1448c1e0b9a685f45d80e089bf533910a4ea6abc
 end
