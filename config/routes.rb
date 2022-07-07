@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'pages/home'
   get 'public_recipes/index'
   get 'general_shopping_list/index'
   resources :recipe_foods
