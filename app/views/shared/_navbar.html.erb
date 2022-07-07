@@ -1,37 +1,10 @@
-
+    
     <nav class="flex items-center justify-between flex-wrap bg-teal-500 p-6">
     <div class="flex items-center flex-shrink-0 text-white mr-6">
-      <a href="#" class="font-semibold text-xl tracking-tight"><%=link_to "My Recipe App", root_path%></a>
+      <a href="#" class="font-semibold text-xl tracking-tight"><%=link_to "My Recipe", root_path%></a>
     </div>
-    <div class="block lg:hidden">
-      <button class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
-        <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
-      </button>
-    </div>
-    <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
-      <div class="text-sm lg:flex-grow">
-        <%= link_to "Home", root_path %>
-        <%= link_to "Recipes", recipes_path %>
-        <%= link_to "Shopping List", general_shopping_list_index_path %>
-        <%= link_to "About", about_path %>
-      </div>
-      <div>
-        <% if user_signed_in? %>
-          <%= link_to "Profile", user_path(current_user) %>
-          <%= link_to "Logout", destroy_user_session_path, method: :delete %>
-        <% else %>
-          <%= link_to "Sign up", new_user_registration_path %>
-          <%= link_to "Login", new_user_session_path %>
-        <% end %>
-      </div>
-    </div>
-  </nav>
-  <%= yield %>
-  <footer class="bg-gray-800 text-center text-white-500 py-4">
-    <p>&copy; 2020 My Recipe App</p>
-  </footer>
-  <%= javascript_include_tag "application", " 
-    </div>
+
+    
     <div class="block lg:hidden">
       <button class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
         <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
@@ -49,8 +22,8 @@
           <%= link_to "Shopping List", general_shopping_list_index_path %>
         </a>
       </div>
-      <div>
-        <a href="#" class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0">Download</a>
-      </div>
+        </div>
+    <div class="flex items-center flex-shrink-0 text-white">
+      <a href="#" class="font-semibold text-xl tracking-tight"><%=button_to "Logout", destroy_user_session_path, method: :delete %></a>
     </div>
   </nav>

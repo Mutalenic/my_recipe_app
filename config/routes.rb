@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   get 'pages/home'
-  get 'public_recipes/index'
+  root 'public_recipes#index'
   get 'general_shopping_list/index'
   resources :recipe_foods
   devise_for :user
@@ -12,5 +12,5 @@ Rails.application.routes.draw do
   # root "articles#index"
   # resources :users, only: [:index, :show] do
   # end
-  root "pages#home"
+  # root "pages#home"
 end
