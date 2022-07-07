@@ -12,5 +12,5 @@ Rails.application.routes.draw do
   # root "articles#index"
   # resources :users, only: [:index, :show] do
   # end
-  root "users#index"
+  root "pages#home"
 end
