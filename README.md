@@ -62,7 +62,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Microverse: [microverse community] (https://github.com/microverseinc)
+- Microverse: [microverse community](https://github.com/microverseinc)
 
 ## 📝 License
 
