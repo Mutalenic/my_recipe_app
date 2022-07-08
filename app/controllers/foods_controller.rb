@@ -33,12 +33,12 @@ class FoodsController < ApplicationController
     @shopping_list = []
     food_list.each do |food|
       recipe_foods.each do |recipe_food|
-        if food.quantity < recipe_food.quantity && food.id == recipe_food.food_id
-          recipe_food.quantity -= food.quantity
-          @shopping_list << food
-          price = food.price * food.quantity
-          @total_price = @total_price.to_i + price.to_i
-        end
+        next unless food.quantity < recipe_food.quantity && food.id == recipe_food.food_id
+
+        recipe_food.quantity -= food.quantity
+        @shopping_list << food
+        price = food.price * food.quantity
+        @total_price = @total_price.to_i + price.to_i
       end
     end
   end
