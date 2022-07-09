@@ -40,7 +40,6 @@ RSpec.describe '/users', type: :request do
     end
   end
 
-  
   describe 'GET /edit' do
     it 'renders a successful response' do
       user = User.create! valid_attributes
@@ -62,7 +61,6 @@ RSpec.describe '/users', type: :request do
         expect(response).to redirect_to(user_url(User.last))
       end
     end
-   
   end
 
   describe 'PATCH /update' do

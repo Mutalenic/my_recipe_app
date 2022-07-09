@@ -32,8 +32,8 @@ class RecipesController < ApplicationController
         format.html { redirect_to recipes_url, notice: 'Recipe was successfully created.' }
         format.json { render :show, status: :created, location: @recipe }
       else
-     flash[:error] = 'Error: recipe could not be saved'
-          redirect_to new_recipe_url
+        flash[:error] = 'Error: recipe could not be saved'
+        redirect_to new_recipe_url
       end
     end
   end
